@@ -113,9 +113,11 @@ function connectWrists() {
   //  } else {ellipse(leftWrist.x, leftWrist.y, 10, 10)}
   
   if (wristDistance < 30) {
-    image(explosionImage, rightWrist.x, rightWrist.y, 50, 50)
+    image(explosionImage, rightWrist.x, rightWrist.y, 150, 150)
+    image(explosionImage, leftWrist.x, leftWrist.y, 150, 150)
     //explosionNoise()
-  } else {ellipse(leftWrist.x, leftWrist.y, 10, 10)}
+  } else {ellipse(leftWrist.x, leftWrist.y, 10, 10)
+         ellipse(rightWrist.x, rightWrist.y, 10, 10)}
   
   
  // strokeWeight(10);
