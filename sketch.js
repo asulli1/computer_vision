@@ -23,7 +23,7 @@ const options = {
   imageScaleFactor: 0.3,
   outputStride: 16, // 8, 16 (larger = faster/less accurate)
   flipHorizontal: true,
-  minConfidence: 0.75,
+  minConfidence: 0.8,
   maxPoseDetections: 2, // 5 is the max
   scoreThreshold: 0.5,
   nmsRadius: 20,
