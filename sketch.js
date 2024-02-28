@@ -56,7 +56,7 @@ function setup() {
 }
 
 function preload() {
-  explosionImage = loadImage("explode-1.gif")
+  explosionImage = loadImage("explode.gif")
   //explosionNoise = loadSound("Deep-explosion-sound-effect.mp3")
  }
 
