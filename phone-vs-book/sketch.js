@@ -63,13 +63,22 @@ function gotResult(error, results) {
     return;
   }
 
-  if (label == "phone") {
-    
-  }
-
   // The results are in an array ordered by confidence.
   // console.log(results[0]);
   label = results[0].label;
+
+  if (label == "phone") {
+    fill(255)
+    textSize(16)
+    text("stop! put that down!", width/2, height/2 - 20);
+  }
+
+  if (label == "book") {
+    fill(255)
+    textSize(16)
+    text("yay! good job :)", width/2, height/2 - 20);
+  }
+
   // Classifiy again!
   classifyVideo();
-}
+} 
